@@ -1,0 +1,35 @@
+.actions{
+    display: none;
+    @media screen and (min-width: 1200px) {
+            display: contents;
+        }
+}
+.actions__list {
+    display: flex;
+    gap: 30px;
+}
+
+.action__wrapper {
+    position: relative;
+    z-index: -1;
+
+    & > .action__dscr {
+        position: absolute;
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--main-light);
+        background-color: rgba(47, 48, 58, 0.8);
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,96 @@
+/* Головна сторінка */
+
+.hero {
+    background-image:
+        var(--gradient),
+        url(../images/hero-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image:
+                var(--gradient),
+                url(../images/hero-mob-2x.jpg);
+        }
+
+    @include tablet{
+        background-image:
+                var(--gradient),
+                url(../images/hero-tab.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    var(--gradient),
+                    url(../images/hero-tab-2x.jpg);
+        }
+    }
+
+    @include desktop{
+        background-image:
+                var(--gradient),
+                url(../images/hero-d.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                var(--gradient),
+                url(../images/hero-d-2x.jpg);
+        }
+    }
+    
+}
+
+.slogan {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.53;
+    color: var(--main-light);
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet{
+        line-height: 1.61;
+    }
+
+    @include desktop{
+     font-size: 44px;   
+     line-height: 1.36;
+    
+    }
+}
+
+.button-action {
+    margin-top: 30px;
+    padding: 10px 32px;
+    background-color: var(--main-color-active);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--main-light);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}  
+}
+

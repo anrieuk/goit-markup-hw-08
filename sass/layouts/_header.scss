@@ -1,0 +1,184 @@
+
+.header__container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+height: 60px;
+    @include tablet{
+        // padding-top: 20px ;
+        // padding-bottom: 20px ;
+        height: 80px;
+    }
+@include desktop{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+}
+
+.header__logo {
+    margin-right: 93px;
+    color: #000000;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    & a {
+    color: var(--main-dark);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}   
+}
+
+
+
+.menu {
+display: none;
+
+@include tablet{
+    display: flex;
+    gap: 50px;
+    position: relative;
+
+  & a:hover,
+    & a:focus {
+    color: var(--main-color-active);
+
+}  
+
+ & .current {
+    position: relative;
+    color: var(--main-color-active);
+
+    &::after {
+    position: absolute;
+    top: 48px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--main-color-active);
+}    
+}
+}
+@include desktop {
+    display: flex;
+    gap: 50px;
+    position: relative;
+
+    & a:hover,
+    & a:focus {
+        color: var(--main-color-active);
+
+    }
+
+    & .current {
+        position: relative;
+        color: var(--main-color-active);
+
+        &::after {
+            position: absolute;
+            top: 48px;
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: var(--main-color-active);
+        }
+    }
+}
+}
+
+
+
+.contacts {
+display: none;
+
+    @include tablet{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-left: auto;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        align-items: baseline;
+    
+        & a {
+            color: var(--secondary-dark);
+    
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+    
+        & a:hover,
+        & a:focus {
+            color: var(--main-color-active);
+    
+        }
+    }
+
+        @media screen and (min-width: 1200px){
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        align-items: baseline;
+
+        & a {
+        color: var(--secondary-dark);
+        
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        & a:hover,
+        & a:focus {
+        color: var(--main-color-active);
+
+            }
+    }
+}
+
+
+
+
+
+
+.contacts__icon {
+    fill: var(--secondary-dark);
+    align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    fill: var(--main-color-active);
+}
+}
+
+.menu-open{
+    border: none;
+    background: transparent;
+    margin-left: auto;
+
+    @include tablet{
+        display: none;
+    }
+           @include desktop {
+               display: none;
+           }
+}
+
+
+
