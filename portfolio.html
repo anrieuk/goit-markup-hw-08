@@ -47,7 +47,58 @@
                             </a>
                         </li>
                     </ul>
-            
+                    <button type="button" class="menu__open" data-menu-open>
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mob-modal is-hidden" data-menu>
+                
+                    <div class="mob-menu-container">
+                        <div class="mob-menu-top">
+                            <button type="button" class="mob__close" data-menu-close>
+                                <svg width="24" height="24">
+                                    <use href="./images/icons.svg#icon-close"></use>
+                                </svg>
+                            </button>
+                
+                            <ul class="mob-menu">
+                                <li class="mob-menu__item"><a class="mob-menu__link" href="./index.html">Студія</a></li>
+                                <li class="mob-menu__item"><a class="mob-menu__link current" href="./portfolio.html">Портфоліо</a></li>
+                                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Контакти</a></li>
+                            </ul>
+                        </div>
+                        <div class="mob-menu-down">
+                            <ul class="mob-contacts">
+                                <li class="mob-contacts__item">
+                                    <a class="mob-contacts__num" href="tel:">
+                                        +38 096 111 11 11 </a>
+                
+                                </li>
+                
+                                <li class="mob-contacts__item">
+                                    <a class="mob-contacts__mail" href="mailto:info@devstudio.com">
+                                        info@devstudio.com</a>
+                                </li>
+                            </ul>
+                
+                            <ul class="mob-soc">
+                                <li class="mob-soc__item"><a class="mob-soc__link" href="#">
+                                        Instagram
+                                    </a></li>
+                                <li class="mob-soc__item"><a class="mob-soc__link" href="#">
+                                        Twitter
+                                    </a></li>
+                                <li class="mob-soc__item"><a class="mob-soc__link" href="#">
+                                        Facebook
+                                    </a></li>
+                                <li class="mob-soc__item"><a class="mob-soc__link" href="#">
+                                        LinkedIn
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </header>
 
@@ -63,11 +114,26 @@
                             <li><button type="button" class="button-filter">Маркетинг</button></li>
                     
                          </ul>
-                        <ul class="projects">
+                        <ul class="project-list">
                         <li class="project">
                            <a class="project-link" href=" ">
                                 <div class="project-box">
-                                <img src="./images/portf1.jpg" alt="Ноутбук" width="370" height="294" >
+                        <picture>
+                        <source srcset="
+                         ./images/portf1-d-1x.jpg  1x,
+                         ./images/portf1-d-2x.jpg  2x
+                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/portf1-tab-1x.jpg    1x,
+                        ./images/portf1-tab-2x.jpg    2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/portf1-mob-1x.jpg    1x,
+                        ./images/portf1-mob-2x.jpg    2x
+                        " media="(min-width: 320px)" />
+                        <img src="./images/portf1.jpg" alt="Ноутбук">
+                    </picture>
+                               
                             <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                             вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
@@ -79,7 +145,22 @@
                         </li>
                         <li class="project">
                            <a class="project-link" href=" ">
-                                    <img src="./images/portf2.jpg" alt="Постер з баскетболістами" width="370" height="294" >
+                            <picture>
+                        <source srcset="
+                         ./images/portf2-d-1x.jpg  1x,
+                         ./images/portf2-d-2x.jpg  2x
+                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/portf2-tab-1x.jpg    1x,
+                        ./images/portf2-tab-2x.jpg    2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/portf2-mob-1x.jpg    1x,
+                        ./images/portf2-mob-2x.jpg    2x
+                        " media="(min-width: 320px)" />
+                    <img src="./images/portf2.jpg" alt="Постер з баскетболістами" >
+                    </picture>
+                                    
                                 <div class="project-dscr">
                                         <h3>Постер New Orlean vs Golden Star</h3>
                                         <p class="project-text">Дизайн</p>
@@ -88,7 +169,22 @@
                         </li>
                         <li class="project">
                            <a class="project-link" href=" ">
-                                <img src="./images/portf3.jpg" alt="Логотип додатку ресторану Seafood" width="370" height="294">
+                     <picture>
+                        <source srcset="
+                         ./images/portf3-d-1x.jpg  1x,
+                         ./images/portf3-d-2x.jpg  2x
+                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/portf3-tab-1x.jpg    1x,
+                        ./images/portf3-tab-2x.jpg    2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/portf3-mob-1x.jpg    1x,
+                        ./images/portf3-mob-2x.jpg    2x
+                        " media="(min-width: 320px)" />
+                    <img src="./images/portf3.jpg" alt="Логотип додатку ресторану Seafood" >
+                    </picture>
+                               
                                 <div class="project-dscr">
                                     <h3>Ресторан Seafood</h3>
                                     <p class="project-text">Додаток</p>
@@ -97,7 +193,23 @@
                         </li>
                         <li class="project">
                            <a class="project-link" href=" ">
-                                <img src="./images/portf4.jpg" alt="Навушники" width="370" height="294">
+
+                    <picture>
+                        <source srcset="
+                         ./images/portf4-d-1x.jpg  1x,
+                         ./images/portf4-d-2x.jpg  2x
+                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/portf4-tab-1x.jpg    1x,
+                        ./images/portf4-tab-2x.jpg    2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/portf4-mob-1x.jpg    1x,
+                        ./images/portf4-mob-2x.jpg    2x
+                        " media="(min-width: 320px)" />
+                    <img src="./images/portf4.jpg" alt="Навушники" >
+                    </picture>
+                               
                                 <div class="project-dscr">
                                     <h3>Проєкт Prime</h3>
                                     <p class="project-text">Маркетинг</p>
@@ -106,7 +218,23 @@
                         </li>
                         <li class="project">
                             <a class="project-link" href=" ">
-                                <img src="./images/portf5.jpg" alt="Коробки" width="370" height="294" >
+
+                    <picture>
+                        <source srcset="
+                         ./images/portf5-d-1x.jpg  1x,
+                         ./images/portf5-d-2x.jpg  2x
+                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/portf5-tab-1x.jpg    1x,
+                        ./images/portf5-tab-2x.jpg    2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/portf5-mob-1x.jpg    1x,
+                        ./images/portf5-mob-2x.jpg    2x
+                        " media="(min-width: 320px)" />
+                    <img src="./images/portf5.jpg" alt="Коробки" >
+                    </picture>
+                            
                                <div class="project-dscr">
                                     <h3>Проєкт Boxes</h3>
                                     <p class="project-text">Додаток</p>
@@ -115,7 +243,23 @@
                         </li>
                         <li class="project">
                            <a class="project-link" href=" ">
-                                <img src="./images/portf6.jpg" alt="Монітор компютера" width="370" height="294" >
+
+                    <picture>
+                        <source srcset="
+                         ./images/portf6-d-1x.jpg  1x,
+                         ./images/portf6-d-2x.jpg  2x
+                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/portf6-tab-1x.jpg    1x,
+                        ./images/portf6-tab-2x.jpg    2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/portf6-mob-1x.jpg    1x,
+                        ./images/portf6-mob-2x.jpg    2x
+                        " media="(min-width: 320px)" />
+                    <img src="./images/portf6.jpg" alt="Монітор компютера" >
+                    </picture>
+                                
                                 <div class="project-dscr">
                                     <h3>Inspiration has no Borders</h3>
                                     <p class="project-text">Веб-сайт</p>
@@ -124,7 +268,23 @@
                         </li>
                         <li class="project">
                            <a class="project-link" href=" ">
-                                <img src="./images/portf7.jpg" alt="Журнал" >
+
+                    <picture>
+                        <source srcset="
+                         ./images/portf7-d-1x.jpg  1x,
+                         ./images/portf7-d-2x.jpg  2x
+                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/portf7-tab-1x.jpg    1x,
+                        ./images/portf7-tab-2x.jpg    2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/portf7-mob-1x.jpg    1x,
+                        ./images/portf7-mob-2x.jpg    2x
+                        " media="(min-width: 320px)" />
+                    <img src="./images/portf7.jpg" alt="Журнал">
+                    </picture>
+                
                                 <div class="project-dscr">
                                     <h3>Видання Limited Edition</h3>
                                     <p class="project-text">Дизайн</p>
@@ -133,7 +293,23 @@
                         </li>
                         <li class="project">
                             <a class="project-link" href=" ">
-                                <img src="./images/portf8.jpg" alt="Бірка з логотипом" width="370" height="294" >
+
+                    <picture>
+                        <source srcset="
+                         ./images/portf8-d-1x.jpg  1x,
+                         ./images/portf8-d-2x.jpg  2x
+                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/portf8-tab-1x.jpg    1x,
+                        ./images/portf8-tab-2x.jpg    2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/portf8-mob-1x.jpg    1x,
+                        ./images/portf8-mob-2x.jpg    2x
+                        " media="(min-width: 320px)" />
+                    <img src="./images/portf8.jpg" alt="Бірка з логотипом" >
+                    </picture>
+                            
                                 <div class="project-dscr">
                                     <h3>Проєкт LAB</h3>
                                     <p class="project-text">Маркетинг</p>
@@ -142,7 +318,23 @@
                         </li>
                         <li class="project">
                             <a class="project-link" href=" ">
-                                <img src="./images/portf9.jpg" alt="Людина працює за ноутбуком" width="370" height="294">
+
+                    <picture>
+                        <source srcset="
+                         ./images/portf9-d-1x.jpg  1x,
+                         ./images/portf9-d-2x.jpg  2x
+                        " media="(min-width: 1200px)" />
+                        <source srcset="
+                        ./images/portf9-tab-1x.jpg    1x,
+                        ./images/portf9-tab-2x.jpg    2x
+                        " media="(min-width: 768px)" />
+                        <source srcset="
+                        ./images/portf9-mob-1x.jpg    1x,
+                        ./images/portf9-mob-2x.jpg    2x
+                        " media="(min-width: 320px)" />
+                    <img src="./images/portf9.jpg" alt="Людина працює за ноутбуком" >
+                    </picture>
+                                
                                 <div class="project-dscr">
                                     <h3>Growing Business</h3>
                                     <p class="project-text">Додаток</p>
@@ -158,40 +350,45 @@
         <!-- Підвал сторінки -->
     <footer>
         <div class="container down">
-            <div class="down-contacts">
-                <a href="/index.html" class="footer__logo logo"> <span class="pre__logo"> Web</span>Studio</a>
-                <address>
-                    <ul class="down-text">
-                        <li class="town"><a href=" https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
-                                rel="noopener noreferrer nofollow">м. Київ,
-                                пр-т Лесі Українки, 26</a></li>
-                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a href="tel:">+38 096 111 11 11</a></li>
+            <div class="footer-wrap">
+                <div class="down-contacts">
+                    <a href="/index.html" class="footer__logo logo"> <span class="pre__logo"> Web</span>Studio</a>
+                    <address>
+                        <ul class="down-text">
+                            <li class="town"><a href=" https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank"
+                                    rel="noopener noreferrer nofollow">м. Київ,
+                                    пр-т Лесі Українки, 26</a></li>
+                            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li><a href="tel:">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="joining">
+                    <h4 class="join">Приєднуйтесь</h4>
+                    <ul class="footer-social">
+    
+                        <li class="footer-icons"><a href="" class="footer-link">
+                                <svg class="footer-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg></a></li>
+                        <li class="footer-icons"><a href="" class="footer-link">
+                                <svg class="footer-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg></a></li>
+                        <li class="footer-icons"><a href="" class="footer-link">
+                                <svg class="footer-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg></a></li>
+                        <li class="footer-icons"><a href="" class="footer-link">
+                                <svg class="footer-icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg></a></li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="joining">
-                <h4 class="join">Приєднуйтесь</h4>
-                <ul class="footer-social">
-                    <!-- <li class="join"><p>Приєднуйтесь</p></li> -->
-                    <li class="footer-icons"><a href="" class="footer-link">
-                            <svg class="footer-icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg></a></li>
-                    <li class="footer-icons"><a href="" class="footer-link">
-                            <svg class="footer-icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg></a></li>
-                    <li class="footer-icons"><a href="" class="footer-link">
-                            <svg class="footer-icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg></a></li>
-                    <li class="footer-icons"><a href="" class="footer-link">
-                            <svg class="footer-icon" width="20px" height="20px">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg></a></li>
-                </ul>
-            </div>
+    
+    
+    
             <div class="folowing">
                 <form action="folowing-form">
                     <label>
@@ -207,5 +404,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
